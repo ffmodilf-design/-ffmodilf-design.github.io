@@ -2,61 +2,145 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>متجر سهيل | Souhail Store</title>
+  <title>متجر سهيل العلوي | Souhail Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: 'Tajawal', sans-serif; background:#f8f8f8; margin:0; padding:20px; text-align:center; }
-    h1 { color:#111; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:30px; }
-    .card { background:#fff; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:15px; }
-    .card img { width:100%; border-radius:10px; height:200px; object-fit:cover; }
-    .card h3 { margin:10px 0 5px; }
-    .card p { color:#555; margin:5px 0; }
-    .btn { display:inline-block; margin-top:10px; padding:10px 15px; background:#25D366; color:#fff; text-decoration:none; border-radius:8px; font-weight:bold; }
-    .old-price { text-decoration: line-through; color:#999; font-size:14px; }
-    .info { margin-top:30px; font-size:15px; color:#333; }
+    body { font-family: 'Tajawal', sans-serif; background:#f4f4f4; margin:0; color:#333; }
+    header { background:#e60023; color:#fff; padding:15px; text-align:center; }
+    header h1 { margin:0; font-size:22px; }
+    nav { background:#fff; display:flex; justify-content:center; gap:15px; padding:10px; box-shadow:0 2px 4px rgba(0,0,0,0.1); position:sticky; top:0; }
+    nav a { text-decoration:none; color:#e60023; font-weight:bold; font-size:14px; }
+    .container { max-width:1100px; margin:20px auto; padding:0 15px; }
+    .section-title { font-size:20px; margin:25px 0 15px; border-right:4px solid #e60023; padding-right:10px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:15px; }
+    .card { background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); overflow:hidden; transition:0.2s; }
+    .card:hover { transform: translateY(-3px); }
+    .card img { width:100%; height:200px; object-fit:cover; }
+    .card-body { padding:12px; }
+    .card h3 { margin:0; font-size:16px; height:40px; overflow:hidden; }
+    .stars { color:#ffb400; font-size:13px; margin:5px 0; }
+    .price { font-size:18px; color:#e60023; font-weight:bold; }
+    .old-price { text-decoration: line-through; color:#999; font-size:13px; margin-right:5px; }
+    .btn { display:block; margin-top:10px; padding:10px; background:#25D366; color:#fff; text-decoration:none; border-radius:8px; font-weight:bold; text-align:center; }
+    footer { background:#111; color:#aaa; text-align:center; padding:20px; margin-top:40px; font-size:14px; }
+    footer a { color:#25D366; text-decoration:none; }
   </style>
 </head>
 <body>
 
-  <h1>🛒 متجر سهيل العلوي</h1>
-  <p>أهلا بيك، اختار المنتوج اللي عجبك 👇</p>
+  <header>
+    <h1>🛒 متجر سهيل العلوي | Souhail Store</h1>
+    <p>أفضل المنتوجات بأرخص الأثمنة | التوصيل لجميع مدن المغرب</p>
+  </header>
 
-  <div class="grid">
+  <nav>
+    <a href="#watches">⌚ ساعات</a>
+    <a href="#earbuds">🎧 سماعات</a>
+    <a href="#phone">📱 إكسسوارات</a>
+    <a href="#gaming">🎮 Gaming</a>
+  </nav>
 
-    <!-- المكان 1: ساعة ذكية -->
-    <div class="card">
-      <img src="https://i.imgur.com/8QfZk2P.jpg" alt="ساعة ذكية">
-      <h3>ساعة ذكية Smart Watch</h3>
-      <p>شاشة لمس + تتبع الصحة + ضد الماء</p>
-      <p><span class="old-price">299 درهم</span> <b>الثمن: 249 درهم</b></p>
-      <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20معلومات%20على%20ساعة%20ذكية%20Smart%20Watch" target="_blank">طلب عبر الواتساب</a>
+  <div class="container">
+
+    <!-- الخانة 1: ساعات -->
+    <h2 class="section-title" id="watches">⌚ ساعات ذكية</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.imgur.com/8QfZk2P.jpg" alt="ساعة HK9 Pro">
+        <div class="card-body">
+          <h3>ساعة HK9 Pro Max الذكية AMOLED</h3>
+          <div class="stars">⭐ 4.8 | 1200+ طلب</div>
+          <p><span class="old-price">349 درهم</span> <span class="price">279 درهم</span></p>
+          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20ساعة%20HK9%20Pro%20Max%20الثمن%20279%20درهم" target="_blank">اطلب الآن واتساب</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/qw2Zk8P.jpg" alt="ساعة Ultra 9">
+        <div class="card-body">
+          <h3>ساعة Ultra 9 ضد الماء + بوصلة</h3>
+          <div class="stars">⭐ 4.7 | 800+ طلب</div>
+          <p><span class="old-price">329 درهم</span> <span class="price">259 درهم</span></p>
+          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20ساعة%20Ultra%209%20الثمن%20259%20درهم" target="_blank">اطلب الآن واتساب</a>
+        </div>
+      </div>
     </div>
 
-    <!-- المكان 2: سماعات M10 -->
-    <div class="card">
-      <img src="https://i.imgur.com/3k7b1wQ.jpg" alt="سماعات M10">
-      <h3>سماعات M10 بلوتوث</h3>
-      <p>صوت قوي + مايك + بطارية 24 ساعة</p>
-      <p><span class="old-price">199 درهم</span> <b>الثمن: 179 درهم</b></p>
-      <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20معلومات%20على%20سماعات%20M10" target="_blank">طلب عبر الواتساب</a>
+    <!-- الخانة 2: سماعات -->
+    <h2 class="section-title" id="earbuds">🎧 سماعات بلوتوث</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.imgur.com/3k7b1wQ.jpg" alt="AirPods Pro 3">
+        <div class="card-body">
+          <h3>سماعات AirPods Pro 3 ANC عزل الضجيج</h3>
+          <div class="stars">⭐ 4.9 | 2000+ طلب</div>
+          <p><span class="old-price">229 درهم</span> <span class="price">179 درهم</span></p>
+          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20سماعات%20AirPods%20Pro%203%20الثمن%20179%20درهم" target="_blank">اطلب الآن واتساب</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/Mk7b1wQ.jpg" alt="M10">
+        <div class="card-body">
+          <h3>سماعات M10 بطارية 24 ساعة + LED</h3>
+          <div class="stars">⭐ 4.6 | 1500+ طلب</div>
+          <p><span class="old-price">199 درهم</span> <span class="price">149 درهم</span></p>
+          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20سماعات%20M10%20الثمن%20149%20درهم" target="_blank">اطلب الآن واتساب</a>
+        </div>
+      </div>
     </div>
 
-    <!-- المكان 3: حامل تيليفون -->
-    <div class="card">
-      <img src="https://i.imgur.com/1nQYv8R.jpg" alt="حامل تيليفون">
-      <h3>حامل تيليفون للسيارة</h3>
-      <p>مغناطيسي قوي 360° يدور</p>
-      <p><span class="old-price">249 درهم</span> <b>الثمن: 199 درهم</b></p>
-      <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20معلومات%20على%20حامل%20تيليفون%20للسيارة" target="_blank">طلب عبر الواتساب</a>
+    <!-- الخانة 3: إكسسوارات -->
+    <h2 class="section-title" id="phone">📱 إكسسوارات التيليفون</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.imgur.com/1nQYv8R.jpg" alt="حامل مغناطيسي">
+        <div class="card-body">
+          <h3>حامل تيليفون مغناطيسي للسيارة 360°</h3>
+          <div class="stars">⭐ 4.7 | 950+ طلب</div>
+          <p><span class="old-price">249 درهم</span> <span class="price">199 درهم</span></p>
+          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20حامل%20مغناطيسي%20الثمن%20199%20درهم" target="_blank">اطلب الآن واتساب</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/5nQYv8R.jpg" alt="كابل 120W">
+        <div class="card-body">
+          <h3>كابل شحن سريع 120W Type-C + iPhone</h3>
+          <div class="stars">⭐ 4.8 | 600+ طلب</div>
+          <p><span class="old-price">99 درهم</span> <span class="price">69 درهم</span></p>
+          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20كابل%20120W%20الثمن%2069%20درهم" target="_blank">اطلب الآن واتساب</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- الخانة 4: Gaming -->
+    <h2 class="section-title" id="gaming">🎮 Gaming</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.imgur.com/7k7b1wQ.jpg" alt="سماعة Gaming">
+        <div class="card-body">
+          <h3>سماعة رأس Gaming RGB + مايك</h3>
+          <div class="stars">⭐ 4.5 | 700+ طلب</div>
+          <p><span class="old-price">249 درهم</span> <span class="price">199 درهم</span></p>
+          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20سماعة%20Gaming%20الثمن%20199%20درهم" target="_blank">اطلب الآن واتساب</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/9k7b1wQ.jpg" alt="مروحة تيليفون">
+        <div class="card-body">
+          <h3>مروحة تبريد التيليفون للألعاب</h3>
+          <div class="stars">⭐ 4.6 | 400+ طلب</div>
+          <p><span class="old-price">159 درهم</span> <span class="price">129 درهم</span></p>
+          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20مروحة%20Gaming%20الثمن%20129%20درهم" target="_blank">اطلب الآن واتساب</a>
+        </div>
+      </div>
     </div>
 
   </div>
 
-  <div class="info">
-    🚚 <b>التوصيل:</b> مراكش 20 درهم | المغرب كامل 40 درهم <br>
-    💵 <b>الدفع:</b> عند الاستلام أو CIH Pay / Cash Plus
-  </div>
+  <footer>
+    🚚 التوصيل: مراكش 20 درهم | المغرب 40 درهم | 💵 الدفع عند الاستلام <br>
+    📞 واتساب: 0785330968 | 📷 انستغرام: <a href="https://instagram.com/souhail_alaoui_10" target="_blank">@souhail_alaoui_10</a> <br>
+    © 2026 جميع الحقوق محفوظة - متجر سهيل
+  </footer>
 
 </body>
 </html>
