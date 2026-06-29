@@ -8,7 +8,7 @@
     body { font-family: 'Tajawal', sans-serif; background:#f4f4f4; margin:0; color:#333; }
     header { background:#e60023; color:#fff; padding:15px; text-align:center; }
     header h1 { margin:0; font-size:22px; }
-    nav { background:#fff; display:flex; justify-content:center; gap:15px; padding:10px; box-shadow:0 2px 4px rgba(0,0,0,0.1); position:sticky; top:0; }
+    nav { background:#fff; display:flex; justify-content:center; gap:15px; padding:10px; box-shadow:0 2px 4px rgba(0,0,0,0.1); position:sticky; top:0; z-index:10; }
     nav a { text-decoration:none; color:#e60023; font-weight:bold; font-size:14px; }
     .container { max-width:1100px; margin:20px auto; padding:0 15px; }
     .section-title { font-size:20px; margin:25px 0 15px; border-right:4px solid #e60023; padding-right:10px; }
@@ -21,7 +21,7 @@
     .stars { color:#ffb400; font-size:13px; margin:5px 0; }
     .price { font-size:18px; color:#e60023; font-weight:bold; }
     .old-price { text-decoration: line-through; color:#999; font-size:13px; margin-right:5px; }
-    .btn { display:block; margin-top:10px; padding:10px; background:#25D366; color:#fff; text-decoration:none; border-radius:8px; font-weight:bold; text-align:center; }
+    .btn { display:block; margin-top:10px; padding:12px; background:#25D366; color:#fff; text-decoration:none; border-radius:8px; font-weight:bold; text-align:center; font-size:15px; }
     footer { background:#111; color:#aaa; text-align:center; padding:20px; margin-top:40px; font-size:14px; }
     footer a { color:#25D366; text-decoration:none; }
   </style>
@@ -42,94 +42,90 @@
 
   <div class="container">
 
-    <!-- الخانة 1: ساعات -->
     <h2 class="section-title" id="watches">⌚ ساعات ذكية</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://i.imgur.com/8QfZk2P.jpg" alt="ساعة HK9 Pro">
+        <img src="https://i.postimg.cc/3xJz3q7P/watch1.jpg" alt="ساعة HK9 Pro">
         <div class="card-body">
           <h3>ساعة HK9 Pro Max الذكية AMOLED</h3>
           <div class="stars">⭐ 4.8 | 1200+ طلب</div>
           <p><span class="old-price">349 درهم</span> <span class="price">279 درهم</span></p>
-          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20ساعة%20HK9%20Pro%20Max%20الثمن%20279%20درهم" target="_blank">اطلب الآن واتساب</a>
+          <a class="btn" href="https://api.whatsapp.com/send?phone=212785330968&text=السلام%20سهيل%20بغيت%20نطلب%20ساعة%20HK9%20Pro%20Max%20الثمن%20279%20درهم" target="_blank">اطلب الآن واتساب</a>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.imgur.com/qw2Zk8P.jpg" alt="ساعة Ultra 9">
+        <img src="https://i.postimg.cc/NjY8k0pT/watch2.jpg" alt="ساعة Ultra 9">
         <div class="card-body">
           <h3>ساعة Ultra 9 ضد الماء + بوصلة</h3>
           <div class="stars">⭐ 4.7 | 800+ طلب</div>
           <p><span class="old-price">329 درهم</span> <span class="price">259 درهم</span></p>
-          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20ساعة%20Ultra%209%20الثمن%20259%20درهم" target="_blank">اطلب الآن واتساب</a>
+          <a class="btn" href="https://api.whatsapp.com/send?phone=212785330968&text=السلام%20سهيل%20بغيت%20نطلب%20ساعة%20Ultra%209%20الثمن%20259%20درهم" target="_blank">اطلب الآن واتساب</a>
         </div>
       </div>
     </div>
 
-    <!-- الخانة 2: سماعات -->
     <h2 class="section-title" id="earbuds">🎧 سماعات بلوتوث</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://i.imgur.com/3k7b1wQ.jpg" alt="AirPods Pro 3">
+        <img src="https://i.postimg.cc/1z5kFz3B/earbuds1.jpg" alt="AirPods Pro 3">
         <div class="card-body">
           <h3>سماعات AirPods Pro 3 ANC عزل الضجيج</h3>
           <div class="stars">⭐ 4.9 | 2000+ طلب</div>
           <p><span class="old-price">229 درهم</span> <span class="price">179 درهم</span></p>
-          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20سماعات%20AirPods%20Pro%203%20الثمن%20179%20درهم" target="_blank">اطلب الآن واتساب</a>
+          <a class="btn" href="https://api.whatsapp.com/send?phone=212785330968&text=السلام%20سهيل%20بغيت%20نطلب%20سماعات%20AirPods%20Pro%203%20الثمن%20179%20درهم" target="_blank">اطلب الآن واتساب</a>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.imgur.com/Mk7b1wQ.jpg" alt="M10">
+        <img src="https://i.postimg.cc/8P2kFz3B/earbuds2.jpg" alt="M10">
         <div class="card-body">
           <h3>سماعات M10 بطارية 24 ساعة + LED</h3>
           <div class="stars">⭐ 4.6 | 1500+ طلب</div>
           <p><span class="old-price">199 درهم</span> <span class="price">149 درهم</span></p>
-          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20سماعات%20M10%20الثمن%20149%20درهم" target="_blank">اطلب الآن واتساب</a>
+          <a class="btn" href="https://api.whatsapp.com/send?phone=212785330968&text=السلام%20سهيل%20بغيت%20نطلب%20سماعات%20M10%20الثمن%20149%20درهم" target="_blank">اطلب الآن واتساب</a>
         </div>
       </div>
     </div>
 
-    <!-- الخانة 3: إكسسوارات -->
     <h2 class="section-title" id="phone">📱 إكسسوارات التيليفون</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://i.imgur.com/1nQYv8R.jpg" alt="حامل مغناطيسي">
+        <img src="https://i.postimg.cc/4d2kFz3B/holder.jpg" alt="حامل مغناطيسي">
         <div class="card-body">
           <h3>حامل تيليفون مغناطيسي للسيارة 360°</h3>
           <div class="stars">⭐ 4.7 | 950+ طلب</div>
           <p><span class="old-price">249 درهم</span> <span class="price">199 درهم</span></p>
-          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20حامل%20مغناطيسي%20الثمن%20199%20درهم" target="_blank">اطلب الآن واتساب</a>
+          <a class="btn" href="https://api.whatsapp.com/send?phone=212785330968&text=السلام%20سهيل%20بغيت%20نطلب%20حامل%20مغناطيسي%20الثمن%20199%20درهم" target="_blank">اطلب الآن واتساب</a>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.imgur.com/5nQYv8R.jpg" alt="كابل 120W">
+        <img src="https://i.postimg.cc/6q2kFz3B/cable.jpg" alt="كابل 120W">
         <div class="card-body">
           <h3>كابل شحن سريع 120W Type-C + iPhone</h3>
           <div class="stars">⭐ 4.8 | 600+ طلب</div>
           <p><span class="old-price">99 درهم</span> <span class="price">69 درهم</span></p>
-          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20كابل%20120W%20الثمن%2069%20درهم" target="_blank">اطلب الآن واتساب</a>
+          <a class="btn" href="https://api.whatsapp.com/send?phone=212785330968&text=السلام%20سهيل%20بغيت%20نطلب%20كابل%20120W%20الثمن%2069%20درهم" target="_blank">اطلب الآن واتساب</a>
         </div>
       </div>
     </div>
 
-    <!-- الخانة 4: Gaming -->
     <h2 class="section-title" id="gaming">🎮 Gaming</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://i.imgur.com/7k7b1wQ.jpg" alt="سماعة Gaming">
+        <img src="https://i.postimg.cc/7z2kFz3B/headset.jpg" alt="سماعة Gaming">
         <div class="card-body">
           <h3>سماعة رأس Gaming RGB + مايك</h3>
           <div class="stars">⭐ 4.5 | 700+ طلب</div>
           <p><span class="old-price">249 درهم</span> <span class="price">199 درهم</span></p>
-          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20سماعة%20Gaming%20الثمن%20199%20درهم" target="_blank">اطلب الآن واتساب</a>
+          <a class="btn" href="https://api.whatsapp.com/send?phone=212785330968&text=السلام%20سهيل%20بغيت%20نطلب%20سماعة%20Gaming%20الثمن%20199%20درهم" target="_blank">اطلب الآن واتساب</a>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.imgur.com/9k7b1wQ.jpg" alt="مروحة تيليفون">
+        <img src="https://i.postimg.cc/9q2kFz3B/fan.jpg" alt="مروحة تيليفون">
         <div class="card-body">
           <h3>مروحة تبريد التيليفون للألعاب</h3>
           <div class="stars">⭐ 4.6 | 400+ طلب</div>
           <p><span class="old-price">159 درهم</span> <span class="price">129 درهم</span></p>
-          <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20نطلب%20مروحة%20Gaming%20الثمن%20129%20درهم" target="_blank">اطلب الآن واتساب</a>
+          <a class="btn" href="https://api.whatsapp.com/send?phone=212785330968&text=السلام%20سهيل%20بغيت%20نطلب%20مروحة%20Gaming%20الثمن%20129%20درهم" target="_blank">اطلب الآن واتساب</a>
         </div>
       </div>
     </div>
