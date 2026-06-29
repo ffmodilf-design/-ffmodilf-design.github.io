@@ -3,41 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سهيل | Souhail</title>
+  <title>سهيل العلوي | Souhail Alaoui</title>
   <style>
-    body { font-family: 'Arial', sans-serif; background: #0f172a; color: #fff; text-align: center; padding: 40px 20px; }
-    .card { background: #1e293b; padding: 30px; border-radius: 20px; max-width: 500px; margin: auto; box-shadow: 0 0 20px #000; }
-    h1 { color: #38bdf8; }
-    .btn { display: block; background: #25D366; color: white; padding: 15px; border-radius: 12px; text-decoration: none; font-size: 18px; margin: 20px 0; }
-    .btn:hover { background: #1ebc59; }
-    .box { background: #334155; padding: 20px; border-radius: 15px; margin-top: 30px; text-align: right; }
-    a.link { color: #38bdf8; text-decoration: none; display: block; margin: 8px 0; }
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+    :root { --bg: #0a0f1e; --card: #111827; --accent: #38bdf8; --green: #22c55e; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Cairo', sans-serif; background: radial-gradient(1200px 600px at 80% -10%, #1f2937, var(--bg)); color: #e5e7eb; min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+    .wrap { width: 100%; max-width: 640px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.08); border-radius: 24px; padding: 32px; backdrop-filter: blur(10px); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+    .avatar { width: 96px; height: 96px; border-radius: 50%; background: conic-gradient(from 180deg, var(--accent), var(--green)); margin: 0 auto 16px; display: grid; place-items: center; font-weight: 900; font-size: 36px; color: #0b1020; }
+    h1 { margin: 0; font-size: 28px; font-weight: 900; text-align: center; }
+    .sub { text-align: center; color: #9ca3af; margin-top: 6px; }
+    .grid { display: grid; gap: 12px; margin-top: 24px; }
+    .btn { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 14px; text-decoration: none; font-weight: 700; transition: .2s; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.03); color: #fff; }
+    .btn:hover { transform: translateY(-2px); background: rgba(255,255,255,.06); }
+    .btn.whatsapp { background: linear-gradient(90deg, #25D366, #1ebc59); border: none; }
+    .btn.insta { background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af); border: none; }
+    .icon { width: 24px; height: 24px; display: grid; place-items: center; font-size: 18px; }
+    .panel { margin-top: 28px; border: 1px dashed rgba(255,255,255,.2); border-radius: 16px; padding: 18px; background: rgba(0,0,0,.2); }
+    .panel h3 { margin: 0 0 10px; font-size: 18px; color: var(--accent); }
+    .panel p { margin: 0 0 12px; color: #9ca3af; font-size: 14px; }
+    .links a { display: block; padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,.04); color: #e5e7eb; text-decoration: none; margin: 8px 0; border: 1px solid rgba(255,255,255,.06); }
+    .links a:hover { background: rgba(255,255,255,.07); }
+    .footer { text-align: center; color: #6b7280; font-size: 12px; margin-top: 16px; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>مرحبا أنا سهيل 👋</h1>
-    <p>مصمم مواقع وصفحات GitHub</p>
+  <div class="wrap">
+    <div class="card">
+      <div class="avatar">س</div>
+      <h1>سهيل العلوي</h1>
+      <div class="sub">مطوّر واجهات | مصمم صفحات GitHub</div>
 
-    <!-- زر الواتساب - بدل الرقم ديالك هنا -->
-    <a class="btn" href="https://wa.me/2120785330968blank">📱 تواصل معي فـ الواتساب</a>
+      <div class="grid">
+        <!-- زر الواتساب -->
+        <a class="btn whatsapp" href="https://wa.me/212785330968" target="_blank" rel="noopener">
+          <span class="icon">📱</span>
+          تواصل معي مباشرة على الواتساب
+        </a>
 
-    <!-- هادي البلاصة ديالك أ سهيل -->
-    <div class="box">
-      <h2>إضافات سهيل 🔥</h2>
-      <p>هنا فين غادي تحط شنو بغيتي:</p>
-      
-      <!-- مثال: رابط لعبة -->
-      <a class="link" href="https://example.com/game" target="_blank">🎮 لعبتي المفضلة</a>
-      
-      <!-- مثال: رابط تطبيق -->
-      <a class="link" href="https://example.com/app" target="_blank">📲 حمّل التطبيق ديالي</a>
-      
-      <!-- مثال: رابط صورة -->
-      <a class="link" href="https://example.com/photo.jpg" target="_blank">🖼️ صور ديالي</a>
+        <!-- زر انستغرام -->
+        <a class="btn insta" href="https://www.instagram.com/souhail_alaoui_10?igsh=bTRmZTd5dTl4dmEz" target="_blank" rel="noopener">
+          <span class="icon">📸</span>
+          تابعني على انستغرام
+        </a>
+      </div>
 
-      <!-- زيد هنا على قدك -->
-      
+      <!-- === هادي هي بلاصتك السرية أ سهيل === -->
+      <div class="panel">
+        <h3>مساحة سهيل الخاصة ✨</h3>
+        <p>هنا فقط يمكنك إضافة ما تريد. لا أحد يستطيع التعديل غيرك.</p>
+        <div class="links">
+          
+          <!-- مثال 1: لعبة -->
+          <a href="https://play2048.co" target="_blank">🎮 جرب لعبة 2048</a>
+          
+          <!-- مثال 2: تطبيق -->
+          <a href="#" target="_blank">📲 حمّل تطبيقي قريباً</a>
+          
+          <!-- مثال 3: صور -->
+          <a href="#" target="_blank">🖼️ معرض أعمالي</a>
+
+          <!-- زيد هنا اللي بغيتي. غير كوبي كولي سطر <a> -->
+
+        </div>
+      </div>
+
+      <div class="footer">© 2026 سهيل العلوي. جميع الحقوق محفوظة.</div>
     </div>
   </div>
 </body>
