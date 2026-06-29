@@ -2,75 +2,45 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <title>متجر سهيل | Souhail Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سهيل العلوي | Souhail Alaoui</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
-    :root { --bg: #0a0f1e; --card: #111827; --accent: #38bdf8; --green: #22c55e; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Cairo', sans-serif; background: radial-gradient(1200px 600px at 80% -10%, #1f2937, var(--bg)); color: #e5e7eb; min-height: 100vh; display: grid; place-items: center; padding: 24px; }
-    .wrap { width: 100%; max-width: 640px; }
-    .card { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.08); border-radius: 24px; padding: 32px; backdrop-filter: blur(10px); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
-    .avatar { width: 96px; height: 96px; border-radius: 50%; background: conic-gradient(from 180deg, var(--accent), var(--green)); margin: 0 auto 16px; display: grid; place-items: center; font-weight: 900; font-size: 36px; color: #0b1020; }
-    h1 { margin: 0; font-size: 28px; font-weight: 900; text-align: center; }
-    .sub { text-align: center; color: #9ca3af; margin-top: 6px; }
-    .grid { display: grid; gap: 12px; margin-top: 24px; }
-    .btn { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 14px; text-decoration: none; font-weight: 700; transition: .2s; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.03); color: #fff; }
-    .btn:hover { transform: translateY(-2px); background: rgba(255,255,255,.06); }
-    .btn.whatsapp { background: linear-gradient(90deg, #25D366, #1ebc59); border: none; }
-    .btn.insta { background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af); border: none; }
-    .icon { width: 24px; height: 24px; display: grid; place-items: center; font-size: 18px; }
-    .panel { margin-top: 28px; border: 1px dashed rgba(255,255,255,.2); border-radius: 16px; padding: 18px; background: rgba(0,0,0,.2); }
-    .panel h3 { margin: 0 0 10px; font-size: 18px; color: var(--accent); }
-    .panel p { margin: 0 0 12px; color: #9ca3af; font-size: 14px; }
-    .links a { display: block; padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,.04); color: #e5e7eb; text-decoration: none; margin: 8px 0; border: 1px solid rgba(255,255,255,.06); }
-    .links a:hover { background: rgba(255,255,255,.07); }
-    .footer { text-align: center; color: #6b7280; font-size: 12px; margin-top: 16px; }
+    body { font-family: 'Tajawal', sans-serif; background:#f8f8f8; margin:0; padding:20px; text-align:center; }
+    h1 { color:#111; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:30px; }
+    .card { background:#fff; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:15px; }
+    .card img { width:100%; border-radius:10px; height:200px; object-fit:cover; }
+    .card h3 { margin:10px 0 5px; }
+    .card p { color:#555; margin:5px 0; }
+    .btn { display:inline-block; margin-top:10px; padding:10px 15px; background:#25D366; color:#fff; text-decoration:none; border-radius:8px; font-weight:bold; }
   </style>
 </head>
 <body>
-  <div class="wrap">
+
+  <h1>🛒 متجر سهيل العلوي</h1>
+  <p>أهلا بيك، اختار المنتوج اللي عجبك 👇</p>
+
+  <div class="grid">
+
+    <!-- المنتوج 1 -->
     <div class="card">
-      <div class="avatar">س</div>
-      <h1>سهيل العلوي</h1>
-      <div class="sub">مطوّر واجهات | مصمم صفحات GitHub</div>
-
-      <div class="grid">
-        <!-- زر الواتساب -->
-        <a class="btn whatsapp" href="https://wa.me/212785330968" target="_blank" rel="noopener">
-          <span class="icon">📱</span>
-          تواصل معي مباشرة على الواتساب
-        </a>
-
-        <!-- زر انستغرام -->
-        <a class="btn insta" href="https://www.instagram.com/souhail_alaoui_10?igsh=bTRmZTd5dTl4dmEz" target="_blank" rel="noopener">
-          <span class="icon">📸</span>
-          تابعني على انستغرام
-        </a>
-      </div>
-
-      <!-- === هادي هي بلاصتك السرية أ سهيل === -->
-      <div class="panel">
-        <h3>مساحة سهيل الخاصة ✨</h3>
-        <p>هنا فقط يمكنك إضافة ما تريد. لا أحد يستطيع التعديل غيرك.</p>
-        <div class="links">
-          
-          <!-- مثال 1: لعبة -->
-          <a href="https://play2048.co" target="_blank">🎮 جرب لعبة 2048</a>
-          
-          <!-- مثال 2: تطبيق -->
-          <a href="#" target="_blank">📲 حمّل تطبيقي قريباً</a>
-          
-          <!-- مثال 3: صور -->
-          <a href="#" target="_blank">🖼️ معرض أعمالي</a>
-
-          <!-- زيد هنا اللي بغيتي. غير كوبي كولي سطر <a> -->
-
-        </div>
-      </div>
-
-      <div class="footer">© 2026 سهيل العلوي. جميع الحقوق محفوظة.</div>
+      <img src="https://via.placeholder.com/300x200.png?text=منتوج+1" alt="منتوج 1">
+      <h3>منتوج 1</h3>
+      <p>الثمن: 199 درهم</p>
+      <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20معلومات%20على%20المنتوج%201" target="_blank">طلب معلومات</a>
     </div>
+
+    <!-- المنتوج 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=منتوج+2" alt="منتوج 2">
+      <h3>منتوج 2</h3>
+      <p>الثمن: 299 درهم</p>
+      <a class="btn" href="https://wa.me/212785330968?text=السلام%20سهيل%20بغيت%20معلومات%20على%20المنتوج%202" target="_blank">طلب معلومات</a>
+    </div>
+
+    <!-- زيد منتوجات هنا بنفس الطريقة -->
+
   </div>
+
 </body>
 </html>
